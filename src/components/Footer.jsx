@@ -1,4 +1,5 @@
 import { Linkedin, Facebook, Instagram } from 'lucide-react';
+import logoBlanco from '../assets/Recurso 41@300x.png';
 
 const Footer = () => {
   return (
@@ -8,7 +9,7 @@ const Footer = () => {
           {/* Logo and Description */}
           <div className="text-center md:text-left">
             <img
-              src="/src/assets/Recurso 41@300x.png"
+              src={logoBlanco}
               alt="Comuni"
               className="h-10 w-auto mb-4 mx-auto md:mx-0"
             />
