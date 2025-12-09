@@ -1,0 +1,197 @@
+@import "tailwindcss";
+
+/* Cargar fuentes personalizadas */
+@font-face {
+  font-family: 'Artico Expanded';
+  src: url('./assets/cretype  Artico Expanded Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('./assets/manrope.regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('./assets/manrope.semibold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@theme {
+  /* Brand Colors - Greens (Priority) */
+  --color-brand: #36d68a;
+  --color-brand-hover: #2bab6e;
+  --color-brand-pressed: #208053;
+
+  /* Content Colors */
+  --color-content-primary: #1b1b1b;
+  --color-content-secondary: #363636;
+  --color-content-tertiary: #6d6d6d;
+  --color-content-disabled: #b8b8b8;
+  --color-content-brand: #36d68a;
+
+  /* Content - Inverse */
+  --color-content-primary-inverse: #ffffff;
+  --color-content-secondary-inverse: #e7e7e7;
+  --color-content-tertiary-inverse: #b8b8b8;
+
+  /* Links */
+  --color-link: #008eff;
+  --color-link-hover: #0072cc;
+  --color-link-pressed: #005599;
+
+  /* Semantic Colors */
+  --color-positive: #36d68a;
+  --color-positive-bold: #208053;
+  --color-negative: #ff3d3d;
+  --color-negative-bold: #992525;
+  --color-notice: #ffa63a;
+  --color-notice-bold: #996423;
+  --color-info: #008eff;
+
+  /* Background Colors */
+  --color-bg-primary: #ffffff;
+  --color-bg-hover: #e7e7e7;
+  --color-bg-pressed: #cfcfcf;
+  --color-bg-selected: #d7f7e8;
+  --color-bg-disabled: #e7e7e7;
+  --color-bg-inverse: #1b1b1b;
+
+  /* Background - Brand */
+  --color-bg-brand: #36d68a;
+  --color-bg-brand-hover: #2bab6e;
+  --color-bg-brand-pressed: #208053;
+
+  /* Background - Semantic */
+  --color-bg-positive: #36d68a;
+  --color-bg-positive-subtle: #d7f7e8;
+  --color-bg-negative: #ff3d3d;
+  --color-bg-negative-subtle: #ffd8d8;
+  --color-bg-notice: #ffa63a;
+  --color-bg-notice-subtle: #ffedd8;
+  --color-bg-info: #008eff;
+  --color-bg-info-subtle: #cce8ff;
+
+  /* Border Colors */
+  --color-border-primary: #6d6d6d;
+  --color-border-secondary: #a0a0a0;
+  --color-border-tertiary: #cfcfcf;
+  --color-border-disabled: #e7e7e7;
+  --color-border-brand: #36d68a;
+  --color-border-inverse: #ffffff;
+  --color-border-focus: #008eff;
+  --color-border-positive: #36d68a;
+  --color-border-negative: #ff3d3d;
+  --color-border-notice: #ffa63a;
+  --color-border-info: #008eff;
+
+  /* Overlay */
+  --color-overlay-50: #00000080;
+  --color-overlay-50-inverse: #ffffff80;
+
+  /* Font Family */
+  --font-family-sans: Manrope, system-ui, sans-serif;
+  --font-family-heading: 'Artico Expanded', sans-serif;
+
+  /* Tailwind-style theme colors */
+  --color-primary: #36d68a;
+  --color-secondary: #008eff;
+  --color-accent: #36d68a;
+  --color-muted: #6d6d6d;
+  --color-destructive: #ff3d3d;
+  --color-foreground: #1b1b1b;
+  --color-secondary-foreground: #ffffff;
+  --color-muted-foreground: #6d6d6d;
+}
+
+/* Aplicar tipografías globalmente */
+body {
+  font-family: Manrope, system-ui, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, .heading {
+  font-family: 'Artico Expanded', sans-serif;
+  font-weight: 500;
+  line-height: 0.9;
+}
+
+@layer utilities {
+  .container-custom {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  @media (min-width: 640px) {
+    .container-custom {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .container-custom {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+
+  /* Gradient backgrounds */
+  .bg-gradient-mesh {
+    background: linear-gradient(135deg, #d7f7e8 0%, #ffffff 50%, #e8f9ff 100%);
+  }
+
+  .bg-gradient-hero {
+    background: linear-gradient(135deg, #36d68a 0%, #2bab6e 100%);
+  }
+
+  .bg-gradient-accent {
+    background: linear-gradient(135deg, #36d68a 0%, #008eff 100%);
+  }
+
+  .bg-gradient-secondary {
+    background: linear-gradient(135deg, #ffa63a 0%, #ff3d3d 100%);
+  }
+
+  /* Shadow utilities */
+  .shadow-glow {
+    box-shadow: 0 4px 14px 0 rgba(54, 214, 138, 0.39);
+  }
+
+  .shadow-strong {
+    box-shadow: 0 8px 24px 0 rgba(54, 214, 138, 0.2);
+  }
+
+  .shadow-medium {
+    box-shadow: 0 4px 12px 0 rgba(27, 27, 27, 0.1);
+  }
+
+  /* Glassmorphism utilities */
+  .glass {
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .glass-dark {
+    background: rgba(27, 27, 27, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .glass-green {
+    background: rgba(54, 214, 138, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(54, 214, 138, 0.3);
+  }
+}
