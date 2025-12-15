@@ -14,7 +14,7 @@ const Tabs = ({ defaultValue, children, className = "" }) => {
 
 const TabsList = ({ children, className = "" }) => {
   return (
-    <div className={`inline-flex h-12 items-center justify-center rounded-lg bg-white p-1 border border-[#cfcfcf] ${className}`}>
+    <div className={`inline-flex h-12 items-center justify-center rounded-lg bg-white p-1 border border-[#cfcfcf] gap-0 overflow-hidden ${className}`}>
       {children}
     </div>
   );
@@ -27,10 +27,10 @@ const TabsTrigger = ({ value, children, className = "" }) => {
   return (
     <button
       onClick={() => setActiveTab(value)}
-      className={`inline-flex items-center justify-center whitespace-nowrap rounded-md px-6 py-2 font-semibold transition-all
+      className={`inline-flex items-center justify-center whitespace-nowrap px-6 py-2 font-semibold transition-all h-full flex-1 first:rounded-l-md last:rounded-r-md
         ${isActive
-          ? "bg-[#36d68a] text-white shadow-sm"
-          : "text-[#6d6d6d] hover:bg-gray-100"
+          ? "bg-[#36d68a] text-white"
+          : "bg-white text-[#6d6d6d]"
         } ${className}`}
     >
       {children}

@@ -26,22 +26,22 @@ const Hero = () => {
         </div>
 
         {/* Hero content */}
-        <div className="container-custom relative z-10 mx-auto py-32">
+        <div className="container-custom relative z-10 mx-auto py-16 md:py-24 lg:py-32 px-4 md:px-0">
           {/* Badge */}
-          <div className="inline-block mb-6">
-            <span className="bg-[#00dd8d] text-white px-6 py-2 rounded-full text-sm font-semibold shadow-lg">
+          <div className="inline-block mb-4 md:mb-6">
+            <span className="bg-[#00dd8d] text-white px-4 py-2 md:px-6 md:py-2 rounded-full text-xs md:text-sm font-semibold shadow-lg">
               La App vecinal #1
             </span>
           </div>
 
           {/* Main headline */}
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight mb-4 md:mb-6">
             <span className="text-white block">Resuelve tu vida vecinal,</span>
             <span className="text-[#36d68a] block">y crea el futuro en comunidad</span>
           </h1>
 
           {/* Descriptive text */}
-          <p className="text-xl md:text-2xl text-white leading-relaxed mb-10">
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white leading-relaxed mb-8 md:mb-10">
             Comuni conecta a vecinos para resolver problemas diarios y decidir en comunidad,
             mientras transforma esa actividad en datos hiperlocales para diseñar mejores ciudades.
           </p>

@@ -1,14 +1,28 @@
+import backgroundImage from "../assets/back_landing-07.webp";
+
 const Market = () => {
   return (
-    <section className="min-h-screen py-20 bg-white flex items-center">
-      <div className="container-custom">
+    <section className="relative min-h-screen py-12 md:py-20 flex items-center overflow-hidden -mb-px">
+      {/* Background image */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat will-change-transform"
+        style={{
+          backgroundImage: `url(${backgroundImage})`,
+          imageRendering: 'auto',
+          transform: 'translateZ(0)',
+          backfaceVisibility: 'hidden',
+          WebkitBackfaceVisibility: 'hidden',
+        }}
+      />
+
+      <div className="container-custom px-4 md:px-0 relative z-10">
         {/* Competitive Advantage Section */}
         <div className="mb-20">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold text-[#1b1b1b] mb-4">
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
               Tu ventaja competitiva
             </h2>
-            <p className="text-xl text-[#6d6d6d] max-w-3xl mx-auto">
+            <p className="text-xl text-white max-w-3xl mx-auto">
               Tus clientes no solo buscan ubicación, sino orden, bienestar y valor social
             </p>
           </div>

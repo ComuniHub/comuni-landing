@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Linkedin, Twitter, Github, Globe } from 'lucide-react';
+import backgroundImage from "../assets/back_landing-08.webp";
 
 const Team = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
@@ -36,24 +37,37 @@ const Team = () => {
   ];
 
   return (
-    <section id="equipo" className="min-h-screen py-24 bg-gradient-to-br from-white to-[#d7f7e8] flex items-center">
-      <div className="container-custom mx-auto">
+    <section id="equipo" className="relative min-h-screen py-16 md:py-24 flex items-center overflow-hidden -mt-px">
+      {/* Background image */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat will-change-transform"
+        style={{
+          backgroundImage: `url(${backgroundImage})`,
+          backgroundPosition: 'center top',
+          imageRendering: 'auto',
+          transform: 'translateZ(0)',
+          backfaceVisibility: 'hidden',
+          WebkitBackfaceVisibility: 'hidden',
+        }}
+      />
+
+      <div className="mx-auto px-4 md:px-6 lg:px-8 relative z-10 w-full">
         {/* Section Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-[#1b1b1b] mb-4">
+        <div className="text-center mb-12 md:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">
             Conócenos
           </h2>
-          <p className="text-xl text-[#6d6d6d]">
+          <p className="text-lg md:text-xl text-white px-4 md:px-0">
             Equipo con experiencia comprobada en desarrollo urbano, tecnología y participación comunitaria
           </p>
         </div>
 
         {/* Team Grid - 4 bloques verticales */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 w-full max-w-[95%] mx-auto">
           {teamMembers.map((member, index) => (
             <div
               key={index}
-              className="relative group overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 aspect-[3/5]"
+              className="relative group overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 h-[500px] w-full"
               onMouseEnter={() => setHoveredIndex(index)}
               onMouseLeave={() => setHoveredIndex(null)}
             >
@@ -87,18 +101,18 @@ const Team = () => {
 
               {/* Vista hover - Información completa con glassmorphism */}
               <div
-                className={`absolute inset-0 glass p-6 flex flex-col justify-between transition-opacity duration-300 ${
+                className={`absolute inset-0 glass p-8 flex flex-col justify-between transition-opacity duration-300 ${
                   hoveredIndex === index ? 'opacity-100' : 'opacity-0'
                 }`}
               >
                 <div>
-                  <h3 className="text-2xl font-bold mb-2 text-[#1b1b1b]">
+                  <h3 className="text-2xl md:text-3xl font-bold mb-3 text-[#1b1b1b]">
                     {member.name}
                   </h3>
-                  <p className="text-lg font-semibold text-[#36d68a] mb-4">
+                  <p className="text-lg md:text-xl font-semibold text-[#36d68a] mb-6">
                     {member.role}
                   </p>
-                  <p className="text-sm text-[#1b1b1b] leading-relaxed">
+                  <p className="text-base md:text-lg text-[#1b1b1b] leading-relaxed">
                     {member.description}
                   </p>
                 </div>

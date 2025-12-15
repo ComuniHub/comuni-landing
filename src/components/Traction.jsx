@@ -57,8 +57,8 @@ const Traction = () => {
   return (
     <>
       {/* Traction Section */}
-      <section className="min-h-screen py-20 bg-white flex items-center">
-        <div className="container-custom">
+      <section className="min-h-screen py-12 md:py-20 bg-white flex items-center">
+        <div className="container-custom px-4 md:px-0">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold text-[#1b1b1b] mb-4">
               Tracción y alianzas
@@ -102,8 +102,8 @@ const Traction = () => {
       </section>
 
       {/* Values Section */}
-      <section className="min-h-screen py-20 bg-gradient-to-br from-[#36d68a] to-[#208053] text-white flex items-center">
-        <div className="container-custom">
+      <section className="min-h-screen py-12 md:py-20 bg-gradient-to-br from-[#36d68a] to-[#208053] text-white flex items-center">
+        <div className="container-custom px-4 md:px-0">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {values.map((value, index) => (
               <div key={index} className="glass p-8 rounded-2xl text-center hover:shadow-xl transition-all">
