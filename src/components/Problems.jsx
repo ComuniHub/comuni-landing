@@ -1,9 +1,9 @@
 import { Card } from "../components/ui/card";
-import backgroundImage from "../assets/back_landing-05.webp";
-import iconoCandado from "../assets/icono-candado.png";
-import iconoRayo from "../assets/icono-rayo.png";
-import iconoMoney from "../assets/icono-money.png";
-import iconoDislike from "../assets/icono-dislike.png";
+import backgroundImage from "../assets/bck3.svg";
+import iconoCandado from "../assets/icono-candado.webp";
+import iconoRayo from "../assets/icono-rayo.webp";
+import iconoMoney from "../assets/icono-money.webp";
+import iconoDislike from "../assets/icono-dislike.webp";
 
 const problems = [
   {
@@ -93,8 +93,8 @@ const Problems = () => {
               }}
             >
               <div className="mb-4">
-                <div className="w-16 h-16 rounded-xl bg-white/20 flex items-center justify-center mb-4">
-                  <img src={problem.icon} alt={problem.title} className="h-10 w-10 object-contain" />
+                <div className="flex items-center justify-start mb-4">
+                  <img src={problem.icon} alt={problem.title} className="h-16 w-16 object-contain" />
                 </div>
                 <h3 className="text-lg font-bold mb-2 text-white">{problem.title}</h3>
               </div>

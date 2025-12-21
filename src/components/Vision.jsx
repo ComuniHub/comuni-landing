@@ -1,7 +1,7 @@
-import backgroundImage from "../assets/back_landing2.webp";
-import iconoHand from "../assets/icono-hand.png";
-import iconoPlus from "../assets/icono-+.png";
-import iconoStats from "../assets/icono-stats.png";
+import backgroundImage from "../assets/bck-2.svg";
+import iconoHand from "../assets/icono-hand.webp";
+import iconoPlus from "../assets/icono-+.webp";
+import iconoStats from "../assets/icono-stats.webp";
 
 const Vision = () => {
   return (
@@ -38,8 +38,8 @@ const Vision = () => {
           {/* Card 1 - Para quién es */}
           <div className="glass rounded-2xl p-6 shadow-medium hover:shadow-strong transition-all">
             <div className="flex items-start gap-4">
-              <div className="p-2 glass-green rounded-xl flex items-center justify-center flex-shrink-0 w-16 h-16">
-                <img src={iconoHand} alt="Icono" className="h-full w-full object-contain" />
+              <div className="flex items-center justify-center flex-shrink-0">
+                <img src={iconoHand} alt="Icono" className="h-16 w-16 object-contain" />
               </div>
               <div>
                 <h3 className="font-bold text-lg mb-2 text-black">Para quién es</h3>
@@ -53,8 +53,8 @@ const Vision = () => {
           {/* Card 2 - Beneficio vecinos */}
           <div className="glass rounded-2xl p-6 shadow-medium hover:shadow-strong transition-all">
             <div className="flex items-start gap-4">
-              <div className="p-2 glass-green rounded-xl flex items-center justify-center flex-shrink-0 w-16 h-16">
-                <img src={iconoPlus} alt="Icono" className="h-full w-full object-contain" />
+              <div className="flex items-center justify-center flex-shrink-0">
+                <img src={iconoPlus} alt="Icono" className="h-16 w-16 object-contain" />
               </div>
               <div>
                 <h3 className="font-bold text-lg mb-2 text-black">Enfrenta retos grandes</h3>
@@ -68,8 +68,8 @@ const Vision = () => {
           {/* Card 3 - Beneficio clientes */}
           <div className="glass rounded-2xl p-6 shadow-medium hover:shadow-strong transition-all">
             <div className="flex items-start gap-4">
-              <div className="p-2 glass-green rounded-xl flex items-center justify-center flex-shrink-0 w-16 h-16">
-                <img src={iconoStats} alt="Icono" className="h-full w-full object-contain" />
+              <div className="flex items-center justify-center flex-shrink-0">
+                <img src={iconoStats} alt="Icono" className="h-16 w-16 object-contain" />
               </div>
               <div>
                 <h3 className="font-bold text-lg mb-2 text-black">Decide con datos reales</h3>

@@ -4,21 +4,21 @@ import './index.css'
 import App from './App.jsx'
 
 // Importar todas las imágenes de fondo para precargarlas ANTES de montar React
-import backLanding2 from './assets/back_landing2.webp';
-import backLanding05 from './assets/back_landing-05.webp';
+import bck2 from './assets/bck-2.svg';
+import bck3 from './assets/bck3.svg';
+import bck4 from './assets/bck4.svg';
 import backLanding07 from './assets/back_landing-07.webp';
-import backLanding08 from './assets/back_landing-08.webp';
-import backLanding09 from './assets/back_landing-09.webp';
-import bgSolucion from './assets/B2BG Solución.png';
+import bck6 from './assets/bck6.svg';
+import bck7 from './assets/bck7.svg';
 
 // Precargar todas las imágenes inmediatamente y en paralelo
 const imagesToPreload = [
-  backLanding2,
-  backLanding05,
+  bck2,
+  bck3,
+  bck4,
   backLanding07,
-  backLanding08,
-  backLanding09,
-  bgSolucion,
+  bck6,
+  bck7,
 ];
 
 // Precargar de forma MUY agresiva antes de que React se monte

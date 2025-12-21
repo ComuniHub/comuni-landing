@@ -2,16 +2,19 @@ import backgroundImage from "../assets/back_landing-07.webp";
 
 const Market = () => {
   return (
-    <section className="relative min-h-screen py-12 md:py-20 flex items-center overflow-hidden -mb-px">
+    <section className="relative min-h-screen py-12 md:py-20 flex items-center overflow-hidden" style={{ marginBottom: '-2px' }}>
       {/* Background image */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat will-change-transform"
         style={{
           backgroundImage: `url(${backgroundImage})`,
+          backgroundSize: 'cover',
           imageRendering: 'auto',
           transform: 'translateZ(0)',
           backfaceVisibility: 'hidden',
           WebkitBackfaceVisibility: 'hidden',
+          bottom: '-1px',
+          height: 'calc(100% + 2px)',
         }}
       />
 

@@ -1,5 +1,6 @@
 import { Linkedin, Facebook, Instagram } from 'lucide-react';
 import logoBlanco from '../assets/Recurso 41@300x.png';
+import iconoHand from '../assets/icono-hand.webp';
 
 const Footer = () => {
   return (
@@ -8,11 +9,18 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center gap-8 mb-8">
           {/* Logo and Description */}
           <div className="text-center md:text-left">
-            <img
-              src={logoBlanco}
-              alt="Comuni"
-              className="h-10 w-auto mb-4 mx-auto md:mx-0"
-            />
+            <div className="flex items-center justify-center md:justify-start gap-3 mb-4">
+              <img
+                src={logoBlanco}
+                alt="Comuni"
+                className="h-10 w-auto"
+              />
+              <img
+                src={iconoHand}
+                alt=""
+                className="h-14 w-14 object-contain"
+              />
+            </div>
             <p className="text-[#b8b8b8] max-w-md">
               Ayudamos a los vecinos de Latinoamérica a ganar viviendo en comunidad
             </p>

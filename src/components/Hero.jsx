@@ -1,6 +1,6 @@
 import { Button } from "../components/ui/button";
 import { Users, Shield, TrendingUp } from "lucide-react";
-import heroImage from "../assets/hero-main.png";
+import heroImage from "../assets/hero-main.svg";
 
 const Hero = () => {
   const scrollToNextSection = () => {

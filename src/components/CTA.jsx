@@ -1,4 +1,4 @@
-import backgroundImage from "../assets/back_landing-09.webp";
+import backgroundImage from "../assets/bck7.svg";
 
 const CTA = () => {
   const scrollToTop = () => {
@@ -6,18 +6,21 @@ const CTA = () => {
   };
 
   return (
-    <section id="comenzar" className="relative py-12 md:py-20 text-white overflow-hidden" style={{ marginTop: '-1px' }}>
+    <section id="comenzar" className="relative py-12 text-white overflow-hidden flex items-center" style={{ marginTop: '-1px' }}>
       {/* Background image */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat will-change-transform"
-        style={{
-          backgroundImage: `url(${backgroundImage})`,
-          imageRendering: 'auto',
-          transform: 'translateZ(0)',
-          backfaceVisibility: 'hidden',
-          WebkitBackfaceVisibility: 'hidden',
-        }}
-      />
+      <div className="absolute inset-0 overflow-hidden">
+        <img 
+          src={backgroundImage}
+          alt=""
+          className="absolute inset-0 w-full h-full object-cover will-change-transform"
+          style={{
+            imageRendering: 'auto',
+            transform: 'translateZ(0)',
+            backfaceVisibility: 'hidden',
+            WebkitBackfaceVisibility: 'hidden',
+          }}
+        />
+      </div>
       
       <div className="container-custom px-4 md:px-0 relative z-10">
         <div className="max-w-4xl mx-auto text-center">

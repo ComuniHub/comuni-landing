@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Linkedin, Twitter, Github, Globe } from 'lucide-react';
-import backgroundImage from "../assets/back_landing-08.webp";
+import backgroundImage from "../assets/bck6.svg";
 
 const Team = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
@@ -37,17 +37,20 @@ const Team = () => {
   ];
 
   return (
-    <section id="equipo" className="relative min-h-screen py-16 md:py-24 flex items-center overflow-hidden -mt-px">
+    <section id="equipo" className="relative min-h-screen py-16 md:py-24 flex items-center overflow-hidden" style={{ marginTop: '-2px' }}>
       {/* Background image */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat will-change-transform"
         style={{
           backgroundImage: `url(${backgroundImage})`,
           backgroundPosition: 'center top',
+          backgroundSize: 'cover',
           imageRendering: 'auto',
           transform: 'translateZ(0)',
           backfaceVisibility: 'hidden',
           WebkitBackfaceVisibility: 'hidden',
+          top: '-1px',
+          height: 'calc(100% + 2px)',
         }}
       />
 
