@@ -1,6 +1,6 @@
 import { Card } from "../components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "../components/ui/tabs";
-import bgImage from "../assets/bck4.svg";
+import bgImage from "../assets/bck4.webp";
 import iconoEyes from "../assets/icono-eyes.webp";
 import iconoChecks from "../assets/icono-checks.webp";
 import iconoFlor from "../assets/icono-flor.webp";
@@ -54,7 +54,7 @@ const dashboardFeatures = [
 
 const Product = () => {
   return (
-    <section className="min-h-screen py-8 md:py-24 bg-gray-50 relative flex items-center overflow-hidden">
+    <section className="min-h-screen py-8 md:py-24 bg-gray-50 relative flex items-center overflow-hidden" style={{ marginTop: '-2px', marginBottom: '-2px' }}>
       {/* Background image */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat will-change-transform"
@@ -114,7 +114,7 @@ const Product = () => {
                     >
                       <div className="flex items-start gap-3 md:gap-4">
                         <div className="flex items-center justify-center flex-shrink-0">
-                          <img src={feature.icon} alt={feature.title} className="h-12 w-12 md:h-14 md:w-14 object-contain" />
+                          <img src={feature.icon} alt={feature.title} className="h-12 w-12 md:h-14 md:w-14 object-contain" loading="lazy" />
                         </div>
                         <div className="flex-1 min-w-0">
                           <h4 className="font-semibold mb-1 text-white text-sm md:text-base">{feature.title}</h4>
@@ -152,7 +152,7 @@ const Product = () => {
                     >
                       <div className="flex items-start gap-3 md:gap-4">
                         <div className="flex items-center justify-center flex-shrink-0">
-                          <img src={feature.icon} alt={feature.text} className="h-12 w-12 md:h-14 md:w-14 object-contain" />
+                          <img src={feature.icon} alt={feature.text} className="h-12 w-12 md:h-14 md:w-14 object-contain" loading="lazy" />
                         </div>
                         <div className="flex-1 min-w-0">
                           <h4 className="font-semibold mb-1 text-white text-sm md:text-base">{feature.text}</h4>

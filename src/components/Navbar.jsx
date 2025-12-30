@@ -46,6 +46,8 @@ const Navbar = () => {
                 src={logoBlanco}
                 alt="Comuni"
                 className="h-7 w-auto"
+                width="187"
+                height="28"
               />
             </a>
           </div>
@@ -95,6 +97,7 @@ const Navbar = () => {
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="text-white hover:text-white/80 focus:outline-none"
+              aria-label={isOpen ? "Cerrar menú" : "Abrir menú"}
             >
               <svg
                 className="h-6 w-6"

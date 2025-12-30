@@ -4,15 +4,17 @@ import './index.css'
 import App from './App.jsx'
 
 // Importar todas las imágenes de fondo para precargarlas ANTES de montar React
-import bck2 from './assets/bck-2.svg';
-import bck3 from './assets/bck3.svg';
-import bck4 from './assets/bck4.svg';
+import heroMain from './assets/hero-main.webp';
+import bck2 from './assets/bck-2.webp';
+import bck3 from './assets/bck3.webp';
+import bck4 from './assets/bck4.webp';
 import backLanding07 from './assets/back_landing-07.webp';
-import bck6 from './assets/bck6.svg';
+import bck6 from './assets/bck6.webp';
 import bck7 from './assets/bck7.svg';
 
 // Precargar todas las imágenes inmediatamente y en paralelo
 const imagesToPreload = [
+  heroMain,
   bck2,
   bck3,
   bck4,

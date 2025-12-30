@@ -38,7 +38,7 @@ const CTA = () => {
               href="https://www.jotform.com/form/252836456956068"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold rounded-lg bg-white text-[#36d68a] shadow-lg hover:bg-[#e7e7e7] transition-all hover:scale-105"
+              className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold rounded-lg bg-white text-[#00a86b] shadow-lg hover:bg-[#e7e7e7] transition-all hover:scale-105"
             >
               Quiero un Demo
             </a>

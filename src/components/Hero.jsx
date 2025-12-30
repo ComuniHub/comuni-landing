@@ -1,6 +1,6 @@
 import { Button } from "../components/ui/button";
 import { Users, Shield, TrendingUp } from "lucide-react";
-import heroImage from "../assets/hero-main.svg";
+import heroImage from "../assets/hero-main.webp";
 
 const Hero = () => {
   const scrollToNextSection = () => {
@@ -13,13 +13,14 @@ const Hero = () => {
 
   return (
     <>
-      <section id="hero" className="relative min-h-screen flex items-center overflow-hidden">
+      <section id="hero" className="relative min-h-screen flex items-center overflow-hidden" style={{ marginBottom: '-2px' }}>
         {/* Background image */}
         <div className="absolute inset-0">
           <img
             src={heroImage}
             alt="Vecinos usando Comuni"
             className="w-full h-full object-cover"
+            loading="lazy"
           />
           {/* Dark overlay */}
           <div className="absolute inset-0 bg-black/30" />
@@ -29,7 +30,7 @@ const Hero = () => {
         <div className="container-custom relative z-10 mx-auto py-16 md:py-24 lg:py-32 px-4 md:px-0">
           {/* Badge */}
           <div className="inline-block mb-4 md:mb-6">
-            <span className="bg-[#00dd8d] text-white px-4 py-2 md:px-6 md:py-2 rounded-full text-xs md:text-sm font-semibold shadow-lg">
+            <span className="bg-[#00a86b] text-white px-4 py-2 md:px-6 md:py-2 rounded-full text-xs md:text-sm font-semibold shadow-lg">
               La App vecinal #1
             </span>
           </div>
@@ -52,7 +53,7 @@ const Hero = () => {
               href="https://www.jotform.com/form/252836456956068"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold rounded-lg bg-[#36d68a] text-white shadow-glow hover:shadow-strong transition-all hover:scale-105"
+              className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold rounded-lg bg-[#00a86b] text-white shadow-glow hover:shadow-strong transition-all hover:scale-105"
             >
               Quiero un Demo
             </a>

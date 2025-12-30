@@ -1,5 +1,5 @@
 import { Card } from "../components/ui/card";
-import backgroundImage from "../assets/bck3.svg";
+import backgroundImage from "../assets/bck3.webp";
 import iconoCandado from "../assets/icono-candado.webp";
 import iconoRayo from "../assets/icono-rayo.webp";
 import iconoMoney from "../assets/icono-money.webp";
@@ -54,7 +54,7 @@ const problems = [
 
 const Problems = () => {
   return (
-    <section className="relative min-h-screen py-16 md:py-24 flex items-center overflow-hidden">
+    <section className="relative min-h-screen py-16 md:py-24 flex items-center overflow-hidden" style={{ marginTop: '-2px', marginBottom: '-2px' }}>
       {/* Background image */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat will-change-transform"
@@ -86,15 +86,15 @@ const Problems = () => {
               key={index}
               className="p-6 hover:shadow-medium transition-all duration-300 hover:-translate-y-1"
               style={{
-                background: 'rgba(250, 83, 83, 1)',
+                background: 'rgba(200, 40, 40, 1)',
                 backdropFilter: 'blur(10px)',
                 WebkitBackdropFilter: 'blur(10px)',
-                border: '1px solid rgba(250, 83, 83, 0.2)'
+                border: '1px solid rgba(200, 40, 40, 0.2)'
               }}
             >
               <div className="mb-4">
                 <div className="flex items-center justify-start mb-4">
-                  <img src={problem.icon} alt={problem.title} className="h-16 w-16 object-contain" />
+                  <img src={problem.icon} alt={problem.title} className="h-16 w-16 object-contain" loading="lazy" />
                 </div>
                 <h3 className="text-lg font-bold mb-2 text-white">{problem.title}</h3>
               </div>

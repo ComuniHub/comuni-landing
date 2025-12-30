@@ -14,11 +14,15 @@ const Footer = () => {
                 src={logoBlanco}
                 alt="Comuni"
                 className="h-10 w-auto"
+                width="187"
+                height="28"
+                loading="lazy"
               />
               <img
                 src={iconoHand}
                 alt=""
                 className="h-14 w-14 object-contain"
+                loading="lazy"
               />
             </div>
             <p className="text-[#b8b8b8] max-w-md">
@@ -32,6 +36,7 @@ const Footer = () => {
               href="https://www.linkedin.com/company/comuniapp/"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Visita nuestro perfil de LinkedIn"
               className="w-10 h-10 rounded-full bg-[#363636] flex items-center justify-center hover:bg-[#36d68a] transition-all"
             >
               <Linkedin className="w-5 h-5 text-white" />
@@ -40,6 +45,7 @@ const Footer = () => {
               href="https://www.facebook.com/share/17ae89ekpk/?mibextid=wwXIfr"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Visita nuestra página de Facebook"
               className="w-10 h-10 rounded-full bg-[#363636] flex items-center justify-center hover:bg-[#36d68a] transition-all"
             >
               <Facebook className="w-5 h-5 text-white" />
@@ -48,6 +54,7 @@ const Footer = () => {
               href="https://www.instagram.com/comuni.social?igsh=amx4NzdueTY2emV5"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Visita nuestro perfil de Instagram"
               className="w-10 h-10 rounded-full bg-[#363636] flex items-center justify-center hover:bg-[#36d68a] transition-all"
             >
               <Instagram className="w-5 h-5 text-white" />

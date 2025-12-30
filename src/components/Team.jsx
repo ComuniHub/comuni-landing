@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Linkedin, Twitter, Github, Globe } from 'lucide-react';
-import backgroundImage from "../assets/bck6.svg";
+import backgroundImage from "../assets/bck6.webp";
 
 const Team = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);

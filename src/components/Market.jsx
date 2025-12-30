@@ -2,7 +2,7 @@ import backgroundImage from "../assets/back_landing-07.webp";
 
 const Market = () => {
   return (
-    <section className="relative min-h-screen py-12 md:py-20 flex items-center overflow-hidden" style={{ marginBottom: '-2px' }}>
+    <section className="relative min-h-screen py-12 md:py-20 flex items-center overflow-hidden" style={{ marginTop: '-2px', marginBottom: '-2px' }}>
       {/* Background image */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat will-change-transform"
@@ -32,26 +32,26 @@ const Market = () => {
 
           {/* Stats Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-            <div className="bg-gradient-to-br from-[#36d68a] to-[#208053] text-white p-8 rounded-2xl shadow-lg">
+            <div className="bg-gradient-to-br from-[#00a86b] to-[#186642] text-white p-8 rounded-2xl shadow-lg">
               <div className="text-5xl font-bold mb-2">7 de cada 10 personas</div>
               <p className="text-lg opacity-90">
                 buscan una vida comunitaria como parte de su experiencia inmobiliaria
               </p>
             </div>
             <div className="space-y-6">
-              <div className="bg-[#d7f7e8] p-6 rounded-xl border border-[#36d68a]/20">
-                <div className="text-3xl font-bold text-[#36d68a] mb-1">
+              <div className="bg-[#d7f7e8] p-6 rounded-xl border border-[#00a86b]/20">
+                <div className="text-3xl font-bold text-[#00a86b] mb-1">
                   $41.1 mil millones MXN (TAM)
                 </div>
                 <p className="text-[#363636]">Mercado residencial MX</p>
               </div>
               <div className="grid grid-cols-2 gap-4">
-                <div className="bg-[#d7f7e8] p-4 rounded-xl border border-[#36d68a]/20">
-                  <div className="text-2xl font-bold text-[#36d68a]">4%</div>
+                <div className="bg-[#d7f7e8] p-4 rounded-xl border border-[#00a86b]/20">
+                  <div className="text-2xl font-bold text-[#00a86b]">4%</div>
                   <p className="text-sm text-[#363636]">crecimiento anual</p>
                 </div>
-                <div className="bg-[#d7f7e8] p-4 rounded-xl border border-[#36d68a]/20">
-                  <div className="text-2xl font-bold text-[#36d68a]">45%</div>
+                <div className="bg-[#d7f7e8] p-4 rounded-xl border border-[#00a86b]/20">
+                  <div className="text-2xl font-bold text-[#00a86b]">45%</div>
                   <p className="text-sm text-[#363636]">viviendas en condominio</p>
                 </div>
               </div>

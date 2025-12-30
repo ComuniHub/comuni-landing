@@ -1,11 +1,11 @@
-import backgroundImage from "../assets/bck-2.svg";
+import backgroundImage from "../assets/bck-2.webp";
 import iconoHand from "../assets/icono-hand.webp";
 import iconoPlus from "../assets/icono-+.webp";
 import iconoStats from "../assets/icono-stats.webp";
 
 const Vision = () => {
   return (
-    <section className="relative min-h-screen py-16 md:py-24 flex items-center overflow-hidden">
+    <section className="relative min-h-screen py-16 md:py-24 flex items-center overflow-hidden" style={{ marginTop: '-2px' }}>
       {/* Background image */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat will-change-transform"
@@ -39,7 +39,7 @@ const Vision = () => {
           <div className="glass rounded-2xl p-6 shadow-medium hover:shadow-strong transition-all">
             <div className="flex items-start gap-4">
               <div className="flex items-center justify-center flex-shrink-0">
-                <img src={iconoHand} alt="Icono" className="h-16 w-16 object-contain" />
+                <img src={iconoHand} alt="Icono" className="h-16 w-16 object-contain" loading="lazy" />
               </div>
               <div>
                 <h3 className="font-bold text-lg mb-2 text-black">Para quién es</h3>
@@ -54,7 +54,7 @@ const Vision = () => {
           <div className="glass rounded-2xl p-6 shadow-medium hover:shadow-strong transition-all">
             <div className="flex items-start gap-4">
               <div className="flex items-center justify-center flex-shrink-0">
-                <img src={iconoPlus} alt="Icono" className="h-16 w-16 object-contain" />
+                <img src={iconoPlus} alt="Icono" className="h-16 w-16 object-contain" loading="lazy" />
               </div>
               <div>
                 <h3 className="font-bold text-lg mb-2 text-black">Enfrenta retos grandes</h3>
@@ -69,7 +69,7 @@ const Vision = () => {
           <div className="glass rounded-2xl p-6 shadow-medium hover:shadow-strong transition-all">
             <div className="flex items-start gap-4">
               <div className="flex items-center justify-center flex-shrink-0">
-                <img src={iconoStats} alt="Icono" className="h-16 w-16 object-contain" />
+                <img src={iconoStats} alt="Icono" className="h-16 w-16 object-contain" loading="lazy" />
               </div>
               <div>
                 <h3 className="font-bold text-lg mb-2 text-black">Decide con datos reales</h3>
