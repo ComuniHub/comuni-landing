@@ -26,10 +26,10 @@ const CTA = () => {
         <div className="max-w-4xl mx-auto text-center">
           {/* Main Heading */}
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 md:mb-6">
-            Vuélvete un héroe local
+            Resuelve tu vida vecinal.
           </h2>
           <p className="text-lg sm:text-xl md:text-2xl mb-8 md:mb-12 text-white/90">
-            Transforma tu desarrollo en una comunidad próspera
+            Transforma tu comunidad y vuélvete un héroe local.
           </p>
 
           {/* CTA Buttons */}
@@ -40,13 +40,13 @@ const CTA = () => {
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold rounded-lg bg-white text-[#00a86b] shadow-lg hover:bg-[#e7e7e7] transition-all hover:scale-105"
             >
-              Quiero un Demo
+              Prueba la App
             </a>
             <button
               onClick={scrollToTop}
               className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold rounded-lg bg-white/20 text-white border-2 border-white hover:bg-white/30 transition-all hover:scale-105"
             >
-              Conocer más
+              Saber más
             </button>
           </div>
 

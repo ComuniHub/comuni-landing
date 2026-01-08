@@ -8,20 +8,20 @@ import iconoDislike from "../assets/icono-dislike.webp";
 const problems = [
   {
     icon: iconoCandado,
-    title: "Desconexión",
-    stat: "70%",
-    description: "de la vida urbana ocurre en los barrios",
+    title: "Inseguridad",
+    stat: "",
+    description: "Poniendo en riesgo la vida de familias a falta de un canal de apoyo.",
     consequences: [
-      "Inseguridad vecinal percibida",
-      "Garantías sin cierre",
-      "-12% valor de inmueble",
+      "Creando 5 veces más violencia vecinal",
+      "Decisiones caóticas",
+      "Desconfianza",
     ],
   },
   {
     icon: iconoRayo,
-    title: "Información Fragmentada",
-    stat: "7%",
-    description: "de vecinos apoyando un cambio",
+    title: "Conflictos",
+    stat: "",
+    description: "Creando 5 veces más violencia vecinal, decisiones caóticas y desconfianza.",
     consequences: [
       "Comunicación dispersa",
       "Decisiones caóticas",
@@ -30,9 +30,9 @@ const problems = [
   },
   {
     icon: iconoMoney,
-    title: "Retrasos y Sobrecostos",
-    stat: "95%",
-    description: "condominios sin administración formal",
+    title: "Sobrecostos",
+    stat: "",
+    description: "Sacrificando ahorros y márgenes por gestionar espacios comunes a ciegas.",
     consequences: [
       "Operación ciega",
       "Erosión de márgenes",
@@ -41,9 +41,9 @@ const problems = [
   },
   {
     icon: iconoDislike,
-    title: "Marca en Riesgo",
-    stat: "$13.2B",
-    description: "MXN mercado desatendido (SOM)",
+    title: "Mala reputación",
+    stat: "",
+    description: "Frenando rentas, ventas, y devaluando hasta un -12% tu patrimonio.",
     consequences: [
       "Desconfianza vecinal",
       "Reputación en riesgo",
@@ -70,13 +70,10 @@ const Problems = () => {
       <div className="container-custom mx-auto px-4 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 md:mb-6 text-white">
-            Pierdes al{" "}
-            <span className="text-[#ff3d3d]">no avanzar</span>{" "}
-            en comunidad
+            Pierdes al no avanzar en comunidad.
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-white">
-            La falta de conexión comunitaria genera costos reales para desarrolladores,
-            administradores y residentes
+            9 de 10 personas sufren los costos reales de la desconexión vecinal:
           </p>
         </div>
 
@@ -104,7 +101,7 @@ const Problems = () => {
                 <p className="text-sm text-white/90">{problem.description}</p>
               </div>
 
-              <div className="space-y-2">
+              {/* <div className="space-y-2">
                 <p className="text-sm font-semibold text-white">Consecuencias:</p>
                 <ul className="space-y-1.5">
                   {problem.consequences.map((consequence, idx) => (
@@ -114,7 +111,7 @@ const Problems = () => {
                     </li>
                   ))}
                 </ul>
-              </div>
+              </div> */}
             </Card>
           ))}
         </div>

@@ -25,22 +25,10 @@ const Footer = () => {
                 loading="lazy"
               />
             </div>
-            <p className="text-[#b8b8b8] max-w-md">
-              Ayudamos a los vecinos de Latinoamérica a ganar viviendo en comunidad
-            </p>
           </div>
 
           {/* Social Media Icons */}
           <div className="flex gap-4">
-            <a
-              href="https://www.linkedin.com/company/comuniapp/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Visita nuestro perfil de LinkedIn"
-              className="w-10 h-10 rounded-full bg-[#363636] flex items-center justify-center hover:bg-[#36d68a] transition-all"
-            >
-              <Linkedin className="w-5 h-5 text-white" />
-            </a>
             <a
               href="https://www.facebook.com/share/17ae89ekpk/?mibextid=wwXIfr"
               target="_blank"
@@ -58,6 +46,15 @@ const Footer = () => {
               className="w-10 h-10 rounded-full bg-[#363636] flex items-center justify-center hover:bg-[#36d68a] transition-all"
             >
               <Instagram className="w-5 h-5 text-white" />
+            </a>
+            <a
+              href="https://www.linkedin.com/company/comuniapp/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Visita nuestro perfil de LinkedIn"
+              className="w-10 h-10 rounded-full bg-[#363636] flex items-center justify-center hover:bg-[#36d68a] transition-all"
+            >
+              <Linkedin className="w-5 h-5 text-white" />
             </a>
           </div>
         </div>

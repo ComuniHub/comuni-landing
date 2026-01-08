@@ -37,14 +37,12 @@ const Hero = () => {
 
           {/* Main headline */}
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight mb-4 md:mb-6">
-            <span className="text-white block">Resuelve tu vida vecinal,</span>
-            <span className="text-[#36d68a] block">y crea el futuro en comunidad</span>
+            <span className="text-white block">Crea el futuro en comunidad.</span>
           </h1>
 
           {/* Descriptive text */}
           <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white leading-relaxed mb-8 md:mb-10">
-            Comuni conecta a vecinos para resolver problemas diarios y decidir en comunidad,
-            mientras transforma esa actividad en datos hiperlocales para diseñar mejores ciudades.
+            Comuni facilita tu vida vecinal resolviendo los retos diarios en seguridad y convivencia, para crear un mejor futuro en casa.
           </p>
 
           {/* CTA Buttons - centrados */}
@@ -55,13 +53,13 @@ const Hero = () => {
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold rounded-lg bg-[#00a86b] text-white shadow-glow hover:shadow-strong transition-all hover:scale-105"
             >
-              Quiero un Demo
+              Prueba la App
             </a>
             <button
               onClick={scrollToNextSection}
               className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold rounded-lg bg-white/65 text-black hover:bg-white/80 transition-all hover:scale-105"
             >
-              Conocer más
+              Saber más
             </button>
           </div>
         </div>

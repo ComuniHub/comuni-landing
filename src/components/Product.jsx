@@ -13,41 +13,45 @@ import iconoPeace from "../assets/icono-peace.webp";
 const appFeatures = [
   {
     icon: iconoEyes,
-    title: "Comunicación Vecinal",
-    description: "Canal estructurado que reemplaza chats dispersos con un espacio confiable para decisiones colectivas",
+    title: "Canal vecinal",
+    description: "Un espacio privado y estructurado para tomar las decisiones que importan.",
   },
   {
     icon: iconoChecks,
-    title: "Control de Incidencias",
-    description: "Reportes geollocalizados y seguimiento transparente de solicitudes y problemas del desarrollo",
+    title: "Reportes y alarmas",
+    description: "Recibe apoyo cuando más lo necesites y da seguimiento a solicitudes.",
   },
   {
     icon: iconoFlor,
-    title: "Índice de Calidad de Vida",
-    description: "Medición continua del desarrollo comunitario basada en estándares globales",
+    title: "Medidor de desarrollo",
+    description: "Mide el progreso y anticipa los problemas todos los días.",
   },
   {
     icon: iconoHouse,
-    title: "Gestión Comunitaria",
-    description: "Herramientas para organización vecinal, votaciones y administración de espacios comunes",
+    title: "Gestor comunitario",
+    description: "facilita las votaciones y la administración de espacios comunes.",
   },
 ];
 
 const dashboardFeatures = [
   {
-    text: "Medición de calidad de vida en tiempo real",
+    title: "Radar de incidencias",
+    text: "Mide la calidad de vida en todo momento.",
     icon: iconoBoard,
   },
   {
-    text: "Trazabilidad completa de solicitudes y reportes",
+    title: "Gestor digital",
+    text: "Resuelve solicitudes y reportes vecinales en un solo lugar.",
     icon: iconoX,
   },
   {
-    text: "Datos hiperlocales listos para análisis",
+    title: "Análisis avanzado",
+    text: "Identifica oportunidades con datos hiperlocales.",
     icon: iconoReloj,
   },
   {
-    text: "Indicadores urbanos y sociales relevantes",
+    title: "Medidor de progreso",
+    text: "Compara la calidad de vida y sustenta la plusvalía.",
     icon: iconoPeace,
   },
 ];
@@ -70,11 +74,7 @@ const Product = () => {
       <div className="container-custom mx-auto relative z-10 px-4 md:px-0">
         <div className="text-center mb-4 md:mb-16">
           <h2 className="text-xl sm:text-2xl md:text-4xl lg:text-5xl font-bold mb-3 md:mb-6 text-white px-1 md:px-0 leading-tight md:leading-normal">
-            La app para{" "}
-            <span className="text-[#1b1b1b]">
-              transformar
-            </span>{" "}
-            en comunidad
+            Gana viviendo en comunidad.
           </h2>
         </div>
 
@@ -94,7 +94,7 @@ const Product = () => {
             <div className="space-y-3 md:space-y-6">
               <div className="text-center px-2 md:px-0">
                 <h4 className="text-base md:text-2xl lg:text-3xl font-bold mb-3 md:mb-6 text-white w-full md:w-[60%] md:ml-auto leading-tight md:leading-normal">
-                  Conecta a tu comunidad con nuestra App
+                  Adiós a los chats inútiles.
                 </h4>
               </div>
 
@@ -132,7 +132,7 @@ const Product = () => {
             <div className="space-y-3 md:space-y-6">
               <div className="text-center px-2 md:px-0">
                 <h4 className="text-base md:text-2xl lg:text-3xl font-bold mb-3 md:mb-6 text-white w-full md:w-[60%] md:ml-auto leading-tight md:leading-normal">
-                  Analiza retos locales en tiempo real
+                  Anticipa y resuelve retos reales.
                 </h4>
               </div>
 
@@ -152,10 +152,11 @@ const Product = () => {
                     >
                       <div className="flex items-start gap-3 md:gap-4">
                         <div className="flex items-center justify-center flex-shrink-0">
-                          <img src={feature.icon} alt={feature.text} className="h-12 w-12 md:h-14 md:w-14 object-contain" loading="lazy" />
+                          <img src={feature.icon} alt={feature.title} className="h-12 w-12 md:h-14 md:w-14 object-contain" loading="lazy" />
                         </div>
                         <div className="flex-1 min-w-0">
-                          <h4 className="font-semibold mb-1 text-white text-sm md:text-base">{feature.text}</h4>
+                          <h4 className="font-semibold mb-1 text-white text-sm md:text-base">{feature.title}</h4>
+                          <p className="text-xs md:text-sm text-white/90 leading-relaxed">{feature.text}</p>
                         </div>
                       </div>
                     </Card>
